@@ -25,14 +25,9 @@ function calculateProfitAndLoss(intiail,qunatity,current){
     }else if (intiail>current){
         var loss=(intiail-current)*qunatity;
         var lossPercentage=(loss/intiail)*100;
-        showMessage(`ohhh.. NO your total loss is ${loss} and ${lossPercentage}%`)
+        outputBox.innerText=`ohhh.. NO ,your total loss is ${loss} and ${lossPercentage}%`
     }else{
-        showMessage("no pain no gain,no gain no pain.....")
+        outputBox.innerText="NO PAIN NO GAIN , NO GAIN NO PAIN"
     }
    
 }
-
-function showMessage(msg){
-    outputBox.innerText.msg;
-}
-
